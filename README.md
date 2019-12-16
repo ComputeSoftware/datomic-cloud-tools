@@ -11,7 +11,7 @@ Install [Clojure CLI tools](https://clojure.org/guides/getting_started#_clojure_
 The installation simply creates a bash script called `dc-tools.sh` that calls this library via the Clojure CLI tools.
 
 ```shell script
-echo "clojure -Sdeps '{:deps {compute/datomic-cloud-tools {:git/url \"https://github.com/ComputeSoftware/datomic-cloud-tools.git\" :sha \"a86afb14983a72624dd8d8cbf8394efafc05edf8\"}}}' -m dc-tools \$@" > dc-tools.sh
+echo "clojure -Sdeps '{:deps {compute/datomic-cloud-tools {:git/url \"https://github.com/ComputeSoftware/datomic-cloud-tools.git\" :sha \"31c39be6caf501683eb3a8aaafc0ebd941aba023\"}}}' -m dc-tools \$@" > dc-tools.sh
 ```
 
 ## Deleting Datomic Cloud System Durable Storage
