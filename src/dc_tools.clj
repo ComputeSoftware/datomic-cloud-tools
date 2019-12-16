@@ -1,7 +1,7 @@
 (ns dc-tools
   (:require
     [clojure.string :as str]
-    [dc-tools.delete :as delete]
+    [dc-tools.delete-storage :as delete]
     [dc-tools.list-running-systems :as list-running-systems]))
 
 (defn system-exit!
@@ -17,7 +17,7 @@
   (let [command (first args)
         cmd-args (rest args)]
     (case command
-      "delete" (delete/delete-command cmd-args)
+      "delete-storage" (delete/delete-command cmd-args)
       "list-running-systems" (list-running-systems/run-command cmd-args)
       {:success? false
        :msg      (format "Unknown command %s" command ".")})))

@@ -1,4 +1,4 @@
-(ns dc-tools.delete
+(ns dc-tools.delete-storage
   (:require
     [clojure.string :as str]
     [clojure.java.shell :as sh]
