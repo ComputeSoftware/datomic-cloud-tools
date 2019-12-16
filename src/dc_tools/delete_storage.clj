@@ -18,6 +18,9 @@
     (zipmap [:partition :service :region :account-id :resource] parts)))
 
 (defmulti delete! :service)
+(defmethod delete! :default
+  [_]
+  nil)
 
 ;; Delete docs
 ;; https://docs.datomic.com/cloud/operation/deleting.html#deleting-storage
